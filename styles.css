@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политическая партия</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Логотип партии">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О партии</a></li>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#events">Мероприятия</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>Добро пожаловать в нашу партию</h1>
+                <p>Мы работаем для благополучия нашего народа и процветания нашей страны.</p>
+                <a href="#program" class="btn">Узнать больше</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>О партии</h2>
+            <p>История и миссия нашей партии...</p>
+        </section>
+
+        <section id="program" class="container">
+            <h2>Программа</h2>
+            <p>Основные направления и законодательные инициативы...</p>
+        </section>
+
+        <section id="news" class="container">
+            <h2>Новости</h2>
+            <p>Последние новости и пресс-релизы...</p>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Мероприятия</h2>
+            <p>Информация о предстоящих мероприятиях...</p>
+        </section>
+
+        <section id="team" class="container">
+            <h2>Команда</h2>
+            <p>Лидеры и активисты партии...</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Контакты</h2>
+            <p>Как с нами связаться...</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="email" name="email" placeholder="Ваш email">
+                <textarea name="message" placeholder="Ваше сообщение"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Политическая партия. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+Александр Коростелин, [21.06.2024 23:00]
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Шапка */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Главная секция */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #e43e3e;
+}
+
+/* Секции */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Контактная форма */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #002244;
+}
+
+/* Подвал */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
